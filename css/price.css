@@ -1,0 +1,42 @@
+body{
+    min-width:auto;
+    /*настраиваем шрифт*/
+    font-family: "arkhip", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight:normal;
+}
+
+
+.product {
+    border: 1px solid #ccc; /* Добавляем рамку вокруг каждого товара */
+    display: inline-block; /* Элементы будут выравниваться как блоки, а не как строчные элементы */
+    text-align: center;
+    width: 300px; /* Задайте фиксированную ширину блока товара */
+    margin: 10px auto; /* Центрируем блоки по горизонтали */
+    padding: 20px;
+   /* width: calc(33.33% - 20px); /* Равномерно распределите 3 блока в один ряд */
+    box-sizing: border-box; /* Учтите padding и border внутри ширины блока */  
+}
+
+.number{
+    border: 1px solid #ccc; /* Добавляем рамку вокруг каждого товара */
+    text-align: center;
+    width: 100px; /* Задайте фиксированную ширину блока товара */
+}
+/* Стили для изображений */
+.product img {
+    width: 200px;
+    height: 150px;
+}
+
+/* Стили для названий товаров */
+.product h2 {
+    font-size: 18px;
+}
+
+/* Стили для цен */
+.product .price {
+    font-size: 16px;
+    color: #ff6600; /* Цвет цены */
+}

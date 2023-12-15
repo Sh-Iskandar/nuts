@@ -1,0 +1,379 @@
+@font-face {
+  font-family: "arkhip";
+  src: url("../fonts/arkhip.woff2") format("woff2"),
+    url("../fonts/arkhip.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --basic-black: #000000;
+  --basic-extra-dark: #242424;
+  --basic-darck: #aba9a7;
+  --basic-neutral: #e5e5e5;
+  --basic-extra-light: #f8f5f2;
+  --basic-white: #ffffff;
+  --basic-green: #159e09;
+  --basic-yellow: #fffb00;
+  --special: #663d15;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  /*подчеркивание снизу ссылок*/
+  text-decoration: none;
+}
+
+
+body {
+  min-width: auto;
+  /*настраиваем шрифт*/
+  font-family: "arkhip", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  padding: 0 200px; /* Отступы слева и справа по 20px, верх и низ без отступа */ 
+}
+
+.background{
+background-color: #e5d5a0;
+}
+
+.heading {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-height: 70px;
+  color: var(--basic-white);
+  display: block;
+  padding: 25px 20px;
+}
+
+
+
+/*горизонтальная линия(тонкая)*/
+.main-nav {
+  border-bottom: 1px solid rgb(199, 212, 214);
+  /* Параметры линии */
+}
+
+.main-nav a:focus,
+.main-nav a:hover {
+  background-color: var(--basic-darck)
+}
+
+
+
+/*Булити*/
+.bulit {
+  list-style: none;
+  font-weight: normal;
+}
+
+.color-green a {
+  color: var(--basic-green);
+}
+
+
+.text-decoration {
+  text-decoration: underline;
+}
+
+.line {
+  border-bottom: 1px solid rgb(0, 0, 0);
+  /* Параметры линии */
+}
+
+
+/*Меню*/
+/*-----------------------------------------------------------------------------------------------------*/
+.menu {
+  width: 100%;
+  display: table;
+}
+
+.menu ul {
+  display: table-row;
+}
+
+.menu li {
+  display: table-cell;
+  background: #1e69aa;
+}
+
+.menu li a {
+  display: block;
+  padding: 8px 15px;
+  color: #ffffff;
+  text-align: center;
+
+}
+
+.menu :hover {
+  color: #89df00;
+  /* Изменяем цвет текста при наведении курсора */
+}
+
+/*Под меню*/
+/*-------------------------------------------------------------------------------------------------------*/
+
+.pod_menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.pod_menu li {
+  margin: 0 10px;
+}
+
+.pod_menu a {
+  text-decoration: none;
+  color: #000000;
+}
+
+input[type="search"] {
+  /*Поиск*/
+  font-size: 100%;
+  height: 30px;
+  width: 300px;
+}
+
+button[type="submit"] {
+  /*Найти*/
+  font-size: 100%;
+  height: 30px;
+  width: 100px;
+}
+
+.logo img {
+  display: block;
+  margin: 0 auto;
+}
+
+.pod_menu {
+  border-bottom: 2px solid rgb(0, 0, 0);
+  /* Параметры линии */
+}
+
+.pod_menu :hover a {
+  text-decoration: underline;
+  /* падчеркивание под текстом*/
+}
+
+
+/*Список*/
+/*-------------------------------------------------------------------------------------------------------*/
+
+/* Скрываем подсписок при загрузке страницы */
+.list {
+  flex: 1;
+  list-style: none;
+  padding: 50px;
+  white-space: nowrap;
+  background-color: #00fc22;
+  border-right: 1px solid green;  /*Создание вертикальной линии*/
+}
+
+.list li ul {
+  display: none;
+  list-style: none;
+}
+
+.list li:hover ul {
+  display: block;
+}
+
+.list li ul li {
+  margin: 5px 0;
+}
+
+.list li ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.list li ul li a:hover {
+  text-decoration: underline;
+}
+.item1{
+  margin: 0 0;
+}
+
+
+
+
+
+                                                 /*Поля*/
+/*-------------------------------------------------------------------------------------------------------*/
+.fields a {
+  display: flex;
+  text-align: center; /* Выравниваем текст по центру */
+  color: #333; /* Цвет текста */
+  /* добавляем рамку*/
+  margin: 5px; /* Фиксированный отступ вокруг каждой фотографии */
+  box-sizing: border-box; /* Размеры элемента включают рамку и внутренний отступ */
+  position: relative;
+  /* Добавляем относительное позиционирование для контейнера */
+
+  /* Устанавливаем фиксированный размер и стиль рамки */
+  width: 150px;
+  /* Фиксированная ширина рамки */
+  height: 10;
+  /* Фиксированная высота рамки */
+  border: 0px solid #000;
+  /* Толщина и цвет рамки */
+  padding: 10px;
+  /* Отступ внутри рамки (по вашему желанию) */
+
+  /*flex-basis: calc(20% - 10px);
+  /* Устанавливаем ширину элемента так, чтобы было 4 элемента в ряду с отступами между ними */
+  margin-right: 1px; /* Добавляем отступ справа между элементами (по вашему желанию) */
+  margin-bottom: 1px; /* Добавляем отступ снизу между строками элементов (по вашему желанию) */
+}
+
+.fields a p {
+  margin: 0;
+  /* Убираем отступы вокруг текста */
+  position: absolute;
+  /* Добавляем абсолютное позиционирование для текста */
+  bottom: 10px;
+  /* Располагаем текст внизу рамки (по вашему желанию) */
+  left: 0;
+  /* Располагаем текст слева с нулевым отступом */
+  right: 0;
+  /* Располагаем текст справа с нулевым отступом */
+  text-align: center;
+  /* Выравнивание текста по центру (по вашему желанию) */
+}
+
+.fields :hover p {
+  text-decoration: underline;
+  /* падчеркивание под текстом*/
+}
+
+
+.fields {
+  display: flex;
+  flex-wrap: wrap; /*перенос в другую строку*/
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid rgb(0, 143, 165); /* Параметры линии */
+  background-color: #ff0000; /* Добавляем фон для наглядности */
+  border-right: 1px solid green;  /*Создание вертикальной линии*/
+  
+}
+
+.imgs {
+  display: block;
+  width: 220px;
+  height: 165px;
+  margin: 0px;
+  object-fit: contain;
+  background-color: rgb(255, 255, 255);
+}
+
+.ff{
+  text-align: center;
+}
+
+.list-container {
+ display: grid;
+ grid-template-columns: 0.2fr 1fr;
+}
+
+/*Подвал*/
+/*-------------------------------------------------------------------------------------------------------*/
+.footer {
+  background-color: #dfddd6;
+  grid-template-columns: 1fr 1fr 1fr;
+  display: flex; /* Используем Flexbox для разделения контейнера */
+  width: 100%;
+  height: 200px;
+  justify-content: space-between;  /* Равномерное распределение пространства между частями */
+}
+
+.item-footer1 ul a {
+  background-color: #663d15;
+  display: flex;
+  flex-wrap: wrap;  /* Разрешаем перенос элементов на новую строку */
+  list-style: none; /* Убираем маркеры у списка */
+/*justify-content: center; /* Выравниваем элементы по центру горизонтально */
+  height: 200px;
+}
+.item-footer2-1 a {
+  background-color: #f0bf0e;
+  text-align: center;
+  margin-top: 0%;
+  text-align: center;
+
+
+}
+
+
+.item-footer2 {
+  display: inline-block;
+}
+
+.item-footer3 {
+  background-color: #0f059b;
+}
+
+
+/*------------------------------------Авторизация------------------------------------*/
+
+.Model-login{
+    display: flex; /*для расположения*/
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    height: 100vh; /* 100% высоты окна браузера, чтобы элемент был посередине страницы */
+}
+
+.login {
+ /* position: fixed;  /*Позиция фиксация*/  
+  bottom: 120px;
+  padding: 50px 80px;
+  align-items: center;
+  background-color: var(--basic-extra-light);
+  background-image: url("img/fruit-chips.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+  box-shadow: 20px 0px 60px #706868d3;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: -15px;
+  /*background-color: rgb(41, 206, 0);  */
+  border: 0;
+  cursor: pointer;
+}
+
+.close::before,
+.close::after{
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: var(--basic-darck);
+}
+
+.close::before{
+  transform: rotate(45deg);
+}
+
+.close::after{
+  transform: rotate(-45deg); 
+}
